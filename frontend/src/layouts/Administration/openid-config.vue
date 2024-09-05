@@ -58,5 +58,5 @@ function saveConfig() {
 </template>
 
 <style scoped>
-/* Add your component styles here */
+  
 </style>
