@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import UsersTable from "@/components/Administration/Users/Table.vue";
 import Tasks from "@/layouts/Administration/Tasks.vue";
-import OpenIDConfig from "@/layouts/Administration/openid-config.vue";
 import storeAuth from "@/stores/auth";
 
 // Props
@@ -11,5 +10,4 @@ const auth = storeAuth();
 <template>
   <users-table />
   <tasks v-if="auth.scopes.includes('tasks.run')" />
-  <open-id-config />
 </template>
